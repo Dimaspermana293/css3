@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filter</title>
+    <style>
+        .container{
+            width: 600px;
+            margin: 20px auto;
+            text-align: center;
+        }
+        img{
+            width: 300px;
+        }
+        .blur img{
+            filter: blur(10px);
+        }
+        .saturasi img{
+            /* filter: saturate(100); */
+            filter: saturate(1000%);
+        }
+        .brightness img{
+            filter: brightness(200%);
+        }
+        .contrast img{
+            filter: contrast(200%);
+        }
+        .grayscale img{
+            filter: grayscale(100%);
+        }
+        .opacity img{
+            filter: opacity(0.5);
+        }
+        .invert img{
+            filter: invert(100%);
+        }
+        .drop-shadow img{
+            filter: drop-shadow(2px 2px 10px rgba(0,0,0,0.9));
+        }
+        .hue-rotate img{
+            filter: hue-rotate(360deg);
+        }
+        .sepia img{
+            filter: sepia(100%);
+        }
+        /* inherit: sesuai parennya */
+        /* initial: sesuai defaultnya */
+
+        /* url(): untuk lokasi XML atau SVG */
+        /* filter: url(svg-url#element-id) */
+
+        /* multiple filter
+        img{
+            filter: blur(50px) grayscale(100%);
+        } */
+        
+        h3{
+            background-color: black;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <!-- Properti filter mendefinisikan efek visual (seperti blur dan saturasi) ke sebuah elemen (seringkali <img>). -->
+    <!-- filter: none | blur() | brightness() | contrast() | drop-shadow() | grayscale() | hue-rotate() | invert() | opacity() | saturate() | sepia() | url(); -->
+    <div class="container">
+        <h1>Filter CSS</h1>
+        <!-- Blur -->
+        <div class="blur">
+            <h3>Blur</h3>
+            <img src="img/cat-besar.png" alt="kucing">
+        </div>
+        <!-- Saturasi -->
+        <div class="saturasi">
+            <h3>Saturasi</h3>
+            <img src="img/cat-besar.png" alt="kucing">
+        </div>
+        <!-- Brightness -->
+        <div class="brightness">
+            <h3>Brightness</h3>
+            <img src="img/cat-besar.png" alt="kucing">
+        </div>
+        <!-- Contrast -->
+        <div class="contrast">
+            <h3>Contrast</h3>
+            <img src="img/cat-besar.png" alt="kucing">
+        </div>
+        <!-- grayscale -->
+        <div class="grayscale">
+            <h3>Grayscale</h3>
+            <img src="img/cat-besar.png" alt="kucing">
+        </div>
+        <!-- opacity -->
+        <div class="opacity">
+            <h3>Opacity</h3>
+            <img src="img/cat-besar.png" alt="kucing">
+        </div>
+        <!-- invert -->
+        <div class="invert">
+            <h3>Invert</h3>
+            <img src="img/cat-besar.png" alt="kucing">
+        </div>
+        <!-- dropshadow -->
+        <div class="drop-shadow">
+            <h3>Drop-shadow</h3>
+            <img src="img/cat-besar.png" alt="kucing">
+        </div>
+        <!-- hue-saturate  -->
+        <div class="hue-rotate">
+            <h3>Hue Rotate</h3>
+            <img src="img/cat-besar.png" alt="kucing">
+        </div>
+        <!-- sepia  -->
+        <div class="sepia">
+            <h3>Sepia</h3>
+            <img src="img/cat-besar.png" alt="kucing">
+        </div>
+    </div>
+</body>
+</html>

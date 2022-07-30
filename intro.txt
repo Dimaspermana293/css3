@@ -1,0 +1,5 @@
+Kenapa menggunakan CSS3
+1. Mudah untuk digunakan dan fleksibel
+2. membuat mockup dengan cepat tanpa bantuan scripting
+3. mengurangi penggunaan gambar
+4. penggunaan selector untuk menghindari markup yang boros

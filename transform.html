@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transform</title>
+    <style>
+        .container{
+            width: 600px;
+            text-align: center;
+            margin: 20px auto;
+            border: 1px solid black;
+        }
+        /* .scale{
+            transform: scale(angka);
+            transform: scaleX(angka);
+            transform: scaleY(angka);
+            transform: scaleZ(angka);
+            transform: scale3d(angka);
+        } */
+        h1{
+            background-color: black;
+            color: white;
+        }
+
+        .kotak{
+            margin: 0 auto;
+            width: 200px;
+            height: 200px;
+            background-color: aqua;
+            line-height: 200px;
+            transition: 0.5s;
+            cursor: pointer;
+        }
+        .kotak.scale:hover{
+            transform: scale(1.5);
+        }        
+        .kotak.rotate:hover{
+            /* degree */
+            /* transform: rotate(45deg); */
+            transform: rotate(100deg);
+        }
+        .kotak.rotateX:hover{
+            /* degree */
+            /* transform: rotate(45deg); */
+            transform: rotateX(100deg);
+        }
+        .kotak.rotateY:hover{
+            /* degree */
+            /* transform: rotate(45deg); */
+            transform: rotateY(100deg);
+        }
+        .kotak.multiple-rotate:hover{
+            /* degree */
+            /* transform: rotate(45deg); */
+            /* multiple rotate */
+            transform: rotate(180deg) rotateX(180deg) rotateY(180deg);
+        }
+        .kotak.skew:hover{
+            /* degree */
+            transform: skew(50deg);
+        }
+        .kotak.skewY:hover{
+            /* degree */
+            transform: SkewY(50deg);
+        }
+        .kotak.skewY:hover{
+            /* degree */
+            transform: SkewY(50deg);
+        }
+        .kotak.translate:hover{
+            transform: translateX(50px) translateY(50px);
+        }
+
+    </style>
+</head>
+<body>
+    <!-- Transformasi CSS memungkinkan Anda untuk memindahkan, memutar, menskala, dan memiringkan elemen. -->
+    <!-- fungsi transform -->
+    <!-- scale: memperbesar/memperkecil -->
+    <!-- rotate: memutar -->
+    <!-- skew: membuat condong/miring -->
+    <!-- translate: mengubah posisi -->
+    <div class="container">
+        <h1>Transform 2D</h1>
+        <p>    Transformasi CSS memungkinkan Anda untuk memindahkan, memutar, menskala, dan memiringkan elemen.</p>
+        <h1>ROTATE</h1>
+        <div class="kotak scale">
+            <h3>Scale Diperbesar: 1.5</h3>
+        </div>
+        <!-- Rotate/diputar -->
+        <div class="kotak rotate">
+            <h3>Rotate 45 derajat</h3>
+        </div>
+        <!-- Rotate/diputar -->
+        <div class="kotak rotateX">
+            <h3>Rotate X</h3>
+        </div>
+        <!-- Rotate/diputar -->
+        <div class="kotak rotateY">
+            <h3>Rotate Y</h3>
+        </div>
+        <!-- Rotate/diputar -->
+        <div class="kotak multiple-rotate">
+            <h3>Multiple Rotate</h3>
+        </div>
+
+        <h1>SKEW/MIRING</h1>
+        <!-- Skew  -->
+        <div class="kotak skew">
+            <h3>Skew</h3>
+        </div>
+        <!-- SkewX  -->
+        <div class="kotak skewY">
+            <h3>Skew Y</h3>
+        </div>
+        <h1>TRANSLATE</h1>
+        <!-- translate -->
+        <div class="kotak translate">
+            <h3>Translate Kanan Bawah</h3>
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

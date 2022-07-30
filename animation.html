@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <style>
+        .kotak{
+            width: 200px;
+            height: 200px;
+            background-color: salmon;
+            /* transition: 0.5s; */
+            /* akan diaktifkan ketika halamannya dibuka */
+            /* infinite: looping */
+
+            /* SHORT HAND */
+            /* animation: animasiKotak 2s ease; */
+
+            /* manual scripting */
+            animation-name: animasiKotak;
+            animation-duration: 2s;
+            animation-timing-function: ease-in;
+            animation-iteration-count: 1;
+            /* dimulai dari akhir */
+            /* animation-direction: reverse; */
+            /* berganti-ganti/bulak-balik */
+            animation-direction: alternate;
+            /* berhenti di akhir */
+            animation-fill-mode: forwards;
+
+            /* untuk control animation */
+            /* animation-play-state: running; */
+        }
+
+        /* animation: [name] [duration] [timing-delay] [transform] */
+        @keyframes animasiKotak {
+            0%{
+                width: 200px;
+            }
+            50%{
+                width: 500px;
+                height: 200px;
+            }
+            100%{
+                width: 500px;
+                height: 500px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Animation -->
+    <!-- memiliki beberapa keadaan (keyframe) -->
+    <h1>Penggunaan Animation</h1>
+    <div class="kotak"></div>
+</body>
+</html>

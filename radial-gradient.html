@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Radial Gradient</title>
+    <style>
+
+        .container{
+            width: 600px;
+        }
+        div{
+            margin: 20px;
+        }
+        h2{
+            color: white;
+            font-size: 2rem;
+            text-align: center;
+        }
+        .default{
+            height: 300px;
+            background-image: radial-gradient(yellow,red,blue);
+            line-height: 300px;
+        }
+        .differently{
+            height: 300px;
+            background-image: radial-gradient(red 5%,yellow 15%, green 60%);
+            line-height: 300px;
+        }
+        .set-shape-circle{
+            height: 300px;
+            background-image: radial-gradient(circle,red,yellow , green);
+            line-height: 300px;
+        }
+        .closest-side{
+            height: 300px;
+            /* background-image: radial-gradient(closest-side,red,yellow , green); */
+            background-image: radial-gradient(closest-side at 60% 55%, red, yellow, black);
+            line-height: 300px;
+        }
+        .farthest-side{
+            height: 300px;
+            /* background-image: radial-gradient(closest-side,red,yellow , green); */
+            background-image: radial-gradient(farthest-side at 60% 55%, red, yellow, black);
+            line-height: 300px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Gradien radial ditentukan oleh pusatnya. Untuk membuat gradien radial, Anda juga harus menentukan setidaknya dua perhentian warna. -->
+    <!-- background-image: radial-gradient(shape size at position, start-color, ..., last-color); -->
+    <div class="container">
+        <h1>Radial Gradient</h1>
+        <div class="default"><h2>Default</h2></div>
+        <div class="differently"><h2>Differently Spaced Color Stops</h2></div>
+        <!-- Parameter bentuk mendefinisikan bentuk. Itu bisa mengambil lingkaran nilai atau elips. Nilai defaultnya adalah elips. -->
+        <div class="set-shape-circle"><h2>Set Shape Circle</h2></div>
+        <!-- Menggunakan Size Keywords -->
+        <!-- 
+            closest-side
+            farthest-side
+            closest-corner
+            farthest-corner -->
+            
+        <div class="closest-side"><h2>closest-side</h2></div>
+        <div class="farthest-side"><h2>farthest-side</h2></div>
+        
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

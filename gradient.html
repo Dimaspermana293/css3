@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gradient</title>
+    <style>
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .container-main{
+            width: 600px;
+            margin: 0 auto;
+            /* border: 1px solid salmon; */
+            height: fit-content;
+        }
+        h2{
+            text-align: center;
+            color: white;
+        }
+        .to-bottom{
+            height: 300px;
+            background-image: linear-gradient(green,yellow);
+        }
+        .to-right{
+            height: 300px;
+            background-image: linear-gradient(to right,green,yellow);
+        }
+        .to-left{
+            height: 300px;
+            background-image: linear-gradient(to left,green,yellow);
+        }
+        .to-bottom{
+            height: 300px;
+            background-image: linear-gradient(to bottom right,green,yellow);
+        }
+        .angle{
+            height: 300px;
+            background-image: linear-gradient(180deg,green,yellow);
+        }
+        .multiple-color{
+            height: 300px;
+            background-image: linear-gradient(red,green,yellow);
+        }
+        .rainbow-color{
+            height: 300px;
+            background-image: linear-gradient(to right, red,orange,yellow,green,blue,indigo,violet);
+        }
+        .transparency{
+            height: 300px;
+            background-image: linear-gradient(to right, rgba(0,255,0,0.3), rgba(0,0,255,0.3));
+        }
+        .repeating{
+            height: 300px;
+            /* background-image: repeating-linear-gradient(rgba(0,255,0,0.3), rgba(0,0,255,0.3)); */
+            background-image: repeating-linear-gradient(red, yellow 10%, green 20%);
+        }
+    </style>
+</head>
+<body>
+    <div class="container-main">
+        <h1>CSS Linear Gradient</h1>
+        <div class="to-bottom">
+            <h2>Linear Gradient(To bottom)</h2>
+        </div>
+        <div class="to-right">
+            <h2>Linear Gradient(To right)</h2>
+        </div>
+        <div class="to-left">
+            <h2>Linear Gradient(To left)</h2>
+        </div>
+        <div class="to-bottom">
+            <h2>Linear Gradient(To bottom right)</h2>
+        </div>
+        <div class="angle">
+            <h2>Linear Gradient(Angle 180 degree)</h2>
+        </div>
+        <div class="multiple-color">
+            <h2>Linear Gradient(multiple-color))</h2>
+        </div>
+        <div class="rainbow-color">
+            <h2>Linear Gradient(Rainbow Color))</h2>
+        </div>
+        <div class="transparency">
+            <h2>Linear Gradient(transparency)</h2>
+        </div>
+        <div class="repeating">
+            <h2>Linear Gradient(repeating)</h2>
+        </div>
+    </div>
+    
+</body>
+</html>
